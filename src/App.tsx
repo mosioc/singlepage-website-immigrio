@@ -27,7 +27,7 @@ const App: React.FC<AppProps> = () => {
       <div className={`${styles.flexCenter}`}>
         <Stats />
       </div>
-      <div className={`bg-blue-700 ${styles.flexCenter} ${styles.paddingX} $`}>
+      <div className={`bg-blue-700 ${styles.flexCenter} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           {/* // sales section */}
           <Sales />

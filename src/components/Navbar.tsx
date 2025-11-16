@@ -13,13 +13,21 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
-    <nav className={`w-full flex py-6 justify-between items-center navbar`}>
+    <nav className={`w-full flex py-6 justify-between items-center navbar ${styles.paddingX}`}>
       <div className="text-white font-bold text-xl cursor-pointer">TestLogo</div>
 
       {/* desktop nav */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav: NavLink, index: number) => (
-          <li></li>
+          <li
+            key={nav.id}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+              active === nav.title ? 'text-white' : 'text-dimWhite'
+            } ${index !== navLinks.length - 1 ? 'mr-10' : ''}`}
+            onClick={() => setActive(nav.title)}
+          >
+            <a href={`#${nav.id}`}>{nav.title}</a>
+          </li>
         ))}
       </ul>
 
@@ -36,7 +44,15 @@ const Navbar: React.FC = () => {
         >
           <ul className="list-none flex flex-col justify-start items-start flex-1">
             {navLinks.map((nav: NavLink, index: number) => (
-              <li></li>
+              <li
+                key={nav.id}
+                className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  active === nav.title ? 'text-white' : 'text-dimWhite'
+                } ${index !== navLinks.length - 1 ? 'mb-4' : ''}`}
+                onClick={() => setActive(nav.title)}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
             ))}
           </ul>
         </div>
