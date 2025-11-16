@@ -1,4 +1,4 @@
-import { user, facebook, instagram, linkedin, client, send, shield, star } from '../assets';
+import { user, facebook, instagram, linkedin, client, send, shield, star } from '../assets/index';
 
 export const navLinks = [
   {
