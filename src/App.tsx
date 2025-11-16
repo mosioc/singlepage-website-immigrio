@@ -1,13 +1,16 @@
 import React from 'react';
-import styles from './style.js';
-import Navbar from './components/Navbar.js';
-import Promo from './components/PromoHead.js';
-import Stats from './components/Stats.js';
-import Sales from './components/Sales.js';
-import PromoSub from './components/PromoSub.js';
-import Testimonials from './components/Testimonials.js';
-import CTA from './components/CTA.js';
-import Footer from './components/Footer.js';
+import styles from './style';
+
+import {
+  Navbar,
+  Promo,
+  Stats,
+  Sales,
+  PromoSub,
+  Testimonials,
+  CTA,
+  Footer,
+} from './components/index';
 
 interface AppProps {}
 
