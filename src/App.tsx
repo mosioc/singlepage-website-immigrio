@@ -1,14 +1,7 @@
 import React from 'react';
 import styles from './style';
 
-import {
-  Navbar,
-  Promo,
-  Stats,
-  Sales,
-  CTA,
-  Footer,
-} from './components/index';
+import { Navbar, Promo, Stats, Sales, CTA, Footer } from './components/index';
 
 interface AppProps {}
 
