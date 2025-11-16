@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`w-full flex py-6 justify-between items-center navbar ${styles.paddingX}`}>
-      <div className="text-white font-bold text-xl cursor-pointer">TestLogo</div>
+      <div className="text-white font-bold text-xl cursor-pointer">Immigrio</div>
 
       {/* desktop nav */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
             isMenuOpen ? 'flex' : 'hidden'
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
-          <ul className="list-none flex flex-col justify-start items-start flex-1">
+          <ul className={`bg-blue-500 rounded-2xl ${styles.paddingX} list-none flex flex-col justify-start items-start flex-1`}>
             {navLinks.map((nav: NavLink, index: number) => (
               <li
                 key={nav.id}
