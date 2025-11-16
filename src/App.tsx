@@ -6,8 +6,6 @@ import {
   Promo,
   Stats,
   Sales,
-  PromoSub,
-  Testimonials,
   CTA,
   Footer,
 } from './components/index';
@@ -18,7 +16,7 @@ const App: React.FC<AppProps> = () => {
   return (
     <div>
       {/* // navbar section */}
-      <div className={`bg-red-500 ${styles.paddingX} ${styles.paddingY} ${styles.boxWidth}`}>
+      <div className={`bg-black w-full`}>
         <Navbar />
       </div>
       {/* // promo section */}
@@ -33,10 +31,6 @@ const App: React.FC<AppProps> = () => {
         <div className={`${styles.boxWidth}`}>
           {/* // sales section */}
           <Sales />
-          {/* // promo-sub section */}
-          <PromoSub />
-          {/* // testimonials section */}
-          <Testimonials />
           {/* // call to action section */}
           <CTA />
           {/* // footer section */}
