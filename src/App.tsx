@@ -9,7 +9,7 @@ const App: React.FC<AppProps> = () => {
   return (
     <div>
       {/* // navbar section */}
-      <div className={`bg-red-500 ${styles.paddingX} ${styles.paddingY} ${styles.boxWidth}`}>
+      <div className={`bg-black w-full`}>
         <Navbar />
       </div>
       {/* // promo section */}
@@ -20,11 +20,10 @@ const App: React.FC<AppProps> = () => {
       <div className={`${styles.flexCenter}`}>
         <Stats />
       </div>
-      <div className={`bg-blue-700 ${styles.flexCenter} ${styles.paddingX} $`}>
+      <div className={`bg-blue-700 ${styles.flexCenter} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           {/* // sales section */}
           <Sales />
-
           {/* // call to action section */}
           <CTA />
           {/* // footer section */}
