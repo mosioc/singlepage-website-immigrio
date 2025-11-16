@@ -18,7 +18,7 @@ const App: React.FC<AppProps> = () => {
   return (
     <div>
       {/* // navbar section */}
-      <div className={`bg-red-50 ${styles.paddingX} ${styles.paddingY} ${styles.boxWidth}`}>
+      <div className={`bg-red-500 ${styles.paddingX} ${styles.paddingY} ${styles.boxWidth}`}>
         <Navbar />
       </div>
       {/* // promo section */}
@@ -29,16 +29,20 @@ const App: React.FC<AppProps> = () => {
       <div className={`${styles.flexCenter}`}>
         <Stats />
       </div>
-      {/* // sales section */}
-      <Sales />
-      {/* // promo-sub section */}
-      <PromoSub />
-      {/* // testimonials section */}
-      <Testimonials />
-      {/* // call to action section */}
-      <CTA />
-      {/* // footer section */}
-      <Footer />
+      <div className={`bg-blue-700 ${styles.flexCenter} ${styles.paddingX} $`}>
+        <div className={`${styles.boxWidth}`}>
+          {/* // sales section */}
+          <Sales />
+          {/* // promo-sub section */}
+          <PromoSub />
+          {/* // testimonials section */}
+          <Testimonials />
+          {/* // call to action section */}
+          <CTA />
+          {/* // footer section */}
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };
