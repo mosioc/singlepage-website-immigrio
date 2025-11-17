@@ -346,7 +346,33 @@ Update URLs in the `socialMedia` array in `bundle.js`
 ## File Structure
 
 ```
-├── style.js          # Styling system and layout utilities
-├── bundle.js         # All static content and data constants
-└── assets/           # Icons and images referenced in bundle.js
+singlepage-website-immigrio/
+├── public/
+├── src/
+│   ├── assets/
+│   │   └── index.ts
+│   ├── components/
+│   │   ├── CTA.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── PromoHead.tsx
+│   │   ├── Sales.tsx
+│   │   ├── Stats.tsx
+│   │   └── index.ts
+│   ├── consts/
+│   │   └── bundle.ts
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── style.ts
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
