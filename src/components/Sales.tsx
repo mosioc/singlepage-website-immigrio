@@ -2,6 +2,52 @@ import React from 'react';
 import { Star, Quote } from 'lucide-react';
 import { feedback, clients, testimonials, features } from '../consts/bundle';
 
+const FeatureCard = ({ icon, title, content }: any) => (
+  <div className="flex flex-row items-start gap-4 p-6 rounded-[20px] border border-white/10 bg-[#1b1b1b] hover:bg-[#222] transition-all">
+    <div className="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-gradient-to-br from-blue-400 to-blue-600">
+      <img src={icon} alt={title} className="w-[50%] h-[50%] object-contain" />
+    </div>
+
+    <div className="flex flex-col">
+      <h4 className="font-poppins font-semibold text-[20px] md:text-[22px] text-white leading-tight">
+        {title}
+      </h4>
+      <p className="font-poppins font-normal text-gray-400 text-[15px] md:text-[16px] leading-relaxed mt-1">
+        {content}
+      </p>
+    </div>
+  </div>
+);
+
+const FeaturesSection: React.FC = () => {
+  return (
+    <section
+      id="features"
+      className="flex flex-col md:flex-row items-start justify-center gap-16 py-16 px-6
+                 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 relative"
+    >
+      <div className="absolute z-[0] w-[40%] h-[40%] -left-[25%] top-[20%] blue__gradient opacity-40" />
+
+      <div className="flex flex-col max-w-[500px] relative z-[1]">
+        <h2 className="font-poppins font-semibold text-4xl md:text-5xl text-white leading-tight">
+          Our <span className="text-gradient">Core Features</span>
+        </h2>
+
+        <p className="font-poppins font-normal text-gray-400 text-base leading-relaxed mt-5 max-w-[420px]">
+          Explore the services and strengths that make our immigration assistance reliable,
+          transparent, and fast.
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-6 max-w-[540px] relative z-[1]">
+        {features.map((feature) => (
+          <FeatureCard key={feature.id} {...feature} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
 interface FeedbackCardProps {
   content: string;
   name: string;
@@ -36,7 +82,7 @@ const Sales: React.FC = () => {
   return (
     <>
       {/* features section */}
-      {/* <FeaturesSection /> */}
+      <FeaturesSection />
 
       {/* testimonials section */}
       <section
