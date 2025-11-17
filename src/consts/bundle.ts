@@ -23,6 +23,14 @@ export const navLinks = [
   },
 ];
 
+export const promo = {
+  mainTitle: 'Your Trusted',
+  highlightedText: 'Immigration',
+  subheading: 'Partner.',
+  description:
+    'Our team of immigration experts provides comprehensive visa and citizenship services tailored to your unique needs. We guide you through every step with expertise and care.',
+};
+
 export const features = [
   {
     id: 'feature-1',
