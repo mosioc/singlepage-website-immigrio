@@ -31,6 +31,14 @@ export const promo = {
     'Our team of immigration experts provides comprehensive visa and citizenship services tailored to your unique needs. We guide you through every step with expertise and care.',
 };
 
+export const immigrationStats = {
+  heading: 'Start Your Immigration',
+  highlightedHeading: 'Journey Today',
+  description:
+    'With our proven track record and dedicated team, we make your immigration process smooth and successful. Join thousands of satisfied clients worldwide.',
+  buttonText: 'Get Started',
+};
+
 export const features = [
   {
     id: 'feature-1',
