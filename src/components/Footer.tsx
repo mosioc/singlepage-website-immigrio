@@ -1,13 +1,24 @@
 import React from 'react';
 import styles from '../style';
-
+import react from '../assets/react.svg';
+import { footerLinks, socialMedia } from '../consts/bundle';
 
 const Footer: React.FC = () => {
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col bg-gray-900`}>
       {/* logo + links */}
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
-        <div className="flex-[1] flex flex-col justify-start mr-10"></div>
+        <div className="flex-[1] flex flex-col justify-start mr-10">
+          <img
+            src={react}
+            alt="Immigration Agency Logo"
+            className="w-[266px] h-[72px] object-contain"
+          />
+          <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
+            We provide expert immigration consulting, visa assistance, and personalized guidance to
+            make your move abroad seamless and successful.
+          </p>
+        </div>
 
         {/* footer links */}
         <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10"></div>
