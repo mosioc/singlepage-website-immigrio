@@ -17,10 +17,10 @@ const App: React.FC<AppProps> = () => {
         <Promo />
       </div>
       {/* // stats section */}
-      <div className={`${styles.flexCenter}`}>
+      <div className={`bg-gray-900 ${styles.flexCenter}`}>
         <Stats />
       </div>
-      <div className={`bg-blue-700 ${styles.flexCenter} ${styles.paddingX}`}>
+      <div className={`bg-gray-900 ${styles.flexCenter} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           {/* // sales section */}
           <Sales />
