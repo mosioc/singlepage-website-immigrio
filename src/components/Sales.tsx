@@ -2,6 +2,29 @@ import React from 'react';
 import { Star, Quote } from 'lucide-react';
 import { feedback, clients, testimonials, features } from '../consts/bundle';
 
+const FeedbackCard: React.FC<FeedbackCardProps> = ({ content, name, title, img }) => (
+  <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card bg-[#1c1c1c] hover:bg-[#272727] transition-all border border-white/10">
+    <Quote className="w-10 h-10 text-blue-400 mb-4" />
+    <p className="font-poppins font-normal text-[18px] leading-[32.4px] text-white my-10">
+      {content}
+    </p>
+
+    <div className="flex flex-row items-center">
+      <img src={img} alt={name} className="w-[48px] h-[48px] rounded-full" />
+      <div className="flex flex-col ml-4">
+        <h4 className="font-poppins font-semibold text-[20px] leading-[32px] text-white">{name}</h4>
+        <p className="font-poppins font-normal text-[16px] leading-[24px] text-gray-400">{title}</p>
+      </div>
+    </div>
+
+    <div className="flex mt-4">
+      {[...Array(5)].map((_, i) => (
+        <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+      ))}
+    </div>
+  </div>
+);
+
 const Sales: React.FC = () => {
   return (
     <>
@@ -29,7 +52,9 @@ const Sales: React.FC = () => {
 
         {/* testimonials cards */}
         <div className="flex flex-wrap sm:justify-start justify-center w-full relative z-[1] max-w-[1280px] mx-auto">
-          
+          {feedback.map((card) => (
+            <FeedbackCard key={card.id} {...card} />
+          ))}
         </div>
 
         {/* trusted section */}
