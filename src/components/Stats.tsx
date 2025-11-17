@@ -36,7 +36,19 @@ const Stats: React.FC = () => {
       </div>
 
       {/* right side - inof card */}
-      <div className="flex-1 max-w-[500px]"></div>
+      <div className="flex-1 max-w-[500px]">
+        <h2 className="font-poppins font-semibold text-4xl md:text-5xl text-white leading-tight">
+          {immigrationStats.heading} <br className="sm:block hidden" />
+          <span className="text-gradient">{immigrationStats.highlightedHeading}</span>
+        </h2>
+        <p className="font-poppins font-normal text-base text-gray-400 leading-relaxed mt-5 max-w-[470px]">
+          {immigrationStats.description}
+        </p>
+
+        <button className="mt-10 py-4 px-8 bg-blue-gradient font-poppins font-medium text-lg text-primary rounded-lg outline-none hover:scale-105 transition-transform">
+          {immigrationStats.buttonText}
+        </button>
+      </div>
     </section>
   );
 };
