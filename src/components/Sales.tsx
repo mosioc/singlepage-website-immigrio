@@ -2,6 +2,13 @@ import React from 'react';
 import { Star, Quote } from 'lucide-react';
 import { feedback, clients, testimonials, features } from '../consts/bundle';
 
+interface FeedbackCardProps {
+  content: string;
+  name: string;
+  title: string;
+  img: string;
+}
+
 const FeedbackCard: React.FC<FeedbackCardProps> = ({ content, name, title, img }) => (
   <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card bg-[#1c1c1c] hover:bg-[#272727] transition-all border border-white/10">
     <Quote className="w-10 h-10 text-blue-400 mb-4" />
