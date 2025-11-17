@@ -7,7 +7,7 @@ interface AppProps {}
 
 const App: React.FC<AppProps> = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       {/* // navbar section */}
       <div className={`bg-black w-full`}>
         <Navbar />
