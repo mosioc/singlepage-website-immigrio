@@ -39,6 +39,13 @@ export const immigrationStats = {
   buttonText: 'Get Started',
 };
 
+export const testimonials = {
+  heading: 'What Our Clients',
+  highlightedHeading: 'Are Saying',
+  description:
+    "Read success stories from families and individuals we've helped achieve their immigration dreams across the globe.",
+};
+
 export const features = [
   {
     id: 'feature-1',
