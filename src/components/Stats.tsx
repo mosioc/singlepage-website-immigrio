@@ -19,7 +19,21 @@ const Stats: React.FC = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center gap-8 py-16 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
       {/* left side - stats */}
-      <div className="flex flex-row flex-wrap justify-center items-center gap-8 flex-1"></div>
+      <div className="flex flex-row flex-wrap justify-center items-center gap-8 flex-1">
+        {stats.map((stat) => (
+          <div key={stat.id} className="flex items-center gap-4 min-w-[200px]">
+            <div className="flex-shrink-0">{getIcon(stat.id)}</div>
+            <div>
+              <h4 className="font-poppins font-semibold text-3xl md:text-4xl text-white">
+                {stat.value}
+              </h4>
+              <p className="font-poppins font-normal text-sm md:text-base text-gradient uppercase">
+                {stat.title}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       {/* right side - inof card */}
       <div className="flex-1 max-w-[500px]"></div>
