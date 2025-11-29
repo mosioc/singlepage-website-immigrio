@@ -10,8 +10,8 @@ export const navLinks = [
     title: 'Services',
   },
   {
-    id: 'visa-types',
-    title: 'Visa Types',
+    id: 'features',
+    title: 'Features',
   },
   {
     id: 'testimonials',
@@ -207,7 +207,7 @@ export const socialMedia = [
   {
     id: 'social-media-4',
     icon: linkedin,
-    link: 'https://www.linkedin.com/mosioc',
+    link: 'https://www.linkedin.com/in/mosioc',
   },
 ];
 
