@@ -5,10 +5,10 @@ import { promo } from '../consts/bundle';
 
 const Promo: React.FC = () => {
   return (
-    <section id="home" className={`w-full flex md:flex-row flex-col ${styles.paddingY} bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 `}>
+    <section id="home" className={`flex w-full md:flex-row xl:flex-row items-center gap-8 py-16 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900`}>
       {/* left col */}
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-        <div className="flex flex-row justify-between items-center w-full">
+      <div className={`flex-1 ${styles.flexBetween} flex-col xl:px-0 sm:px-16 px-6`}>
+        <div className="flex flex-col justify-between items-center w-full">
           <h1
             className="
               flex-1 font-poppins font-semibold
@@ -28,7 +28,6 @@ const Promo: React.FC = () => {
             ss:text-[68px] text-[52px]
             text-white
             ss:leading-[100.8px] leading-[75px]
-            w-full
           "
         >
           {promo.subheading}
@@ -38,7 +37,7 @@ const Promo: React.FC = () => {
       </div>
 
       {/* right col */}
-      <div className={`flex-1 flex ${styles.flexCenter} relative md:my-0 my-10`}>
+      <div className={`flex-1 flex ${styles.flexCenter} relative xl:size-100 md:my-0 my-10`}>
         <Plane className="w-[80%] h-[80%] text-white relative z-[5]" strokeWidth={1.8} />
       </div>
     </section>

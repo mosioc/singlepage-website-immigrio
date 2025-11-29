@@ -4,7 +4,7 @@ import { feedback, clients, testimonials, features } from '../consts/bundle';
 
 const FeatureCard = ({ icon, title, content }: any) => (
   <div className="flex flex-row items-start gap-4 p-6 rounded-[20px] border border-white/10 bg-[#1b1b1b] hover:bg-[#222] transition-all">
-    <div className="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-gradient-to-br from-blue-400 to-blue-600">
+    <div className="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-linear-to-br from-blue-400 to-blue-600">
       <img src={icon} alt={title} className="w-[50%] h-[50%] object-contain" />
     </div>
 
@@ -24,7 +24,7 @@ const FeaturesSection: React.FC = () => {
     <section
       id="features"
       className="flex flex-col md:flex-row items-start justify-center gap-16 py-16 px-6
-                 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 relative"
+                 bg-linear-to-r from-gray-900 via-gray-800 to-gray-900 relative"
     >
       <div className="absolute z-[0] w-[40%] h-[40%] -left-[25%] top-[20%] blue__gradient opacity-40" />
 
@@ -87,7 +87,7 @@ const Sales: React.FC = () => {
       {/* testimonials section */}
       <section
         id="testimonials"
-        className="flex flex-col py-16 px-6 relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
+        className="flex flex-col py-16 px-6 relative bg-linear-to-r from-gray-900 via-gray-800 to-gray-900"
       >
         <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
@@ -104,7 +104,7 @@ const Sales: React.FC = () => {
         </div>
 
         {/* testimonials cards */}
-        <div className="flex flex-wrap sm:justify-start justify-center w-full relative z-[1] max-w-[1280px] mx-auto">
+        <div className="flex flex-wrap sm:justify-center justify-center w-full relative z-[1] max-w-[1280px] mx-auto">
           {feedback.map((card) => (
             <FeedbackCard key={card.id} {...card} />
           ))}
