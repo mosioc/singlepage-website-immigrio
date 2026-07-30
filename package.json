@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
-    "@vitejs/plugin-rsc": "^0.5.5",
+    "@vitejs/plugin-rsc": "^0.5.26",
     "lucide-react": "^0.553.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
